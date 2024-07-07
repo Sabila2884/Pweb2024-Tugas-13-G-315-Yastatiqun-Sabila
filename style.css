@@ -1,0 +1,262 @@
+/* Header */
+
+.header,
+.header2,
+.header3 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: orange;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.sidebar.show {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: navy;
+    text-decoration: none;
+}
+
+.sidebar ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 20px;
+}
+
+.sidebar ul ul {
+    position: static;
+    display: none;
+}
+
+.jarak {
+    padding-left: 10px
+}
+
+
+/* Button */
+
+.btn {
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn.click {
+    right: 260px;
+}
+
+.btn span {
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+
+/* Article */
+
+.article{
+    background-image: url(Blue\ Watercolor.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.article2{
+    background-image: url(Blue\ Watercolor.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.article3 {
+    background-image: url(Blue\ Watercolor.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+/* Footer */
+
+.footer1,
+.footer2,
+.footer3 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    font-family: Arial;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    height: 50px;
+}
+
+
+/* Responsif */
+
+@media screen and (max-width:768px) {
+    .article,
+    .article2,
+    .article3 {
+        margin-left: 0;
+    }
+    .article.click {
+        margin-left: 250px;
+    }
+    .home,
+    .aboutme,
+    .contact {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+
+}
+
+.foto img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+   
+}
+
+
+.kalimat{
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+
+
+.ikon-wa,
+.ikon-ig{
+ width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: 80%;
+}
+
+
+/* Formulir Kontak */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: darkblue;
+}
+
+
+
+
+
+
+
+
+
